@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        
+        body{
+            background-color: rgb(246, 238, 238);
+        }
+
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .main-container{
+            background-color: rgb(246, 238, 238);
+            width: 100%;
+            height: 100vh;
+        }
+        .heading{
+            text-align: center;
+            padding-top: 50px;
+            font-size: 60px;
+            color: rgb(255, 153, 0);
+        }
+        .sub-heading{
+            text-align: center;
+            padding-top: 20px;
+            font-size: 20px;
+            color: rgb(135, 131, 131);
+        }
+        .section-2-for-content{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            text-align: center;
+            gap: 25px;
+            padding-top: 100px;
+        }
+        .card{
+            width: 400px;
+            height: 400px;
+            background-color: rgb(205, 203, 203);
+            border-radius: 20px; 
+        }
+        .card:hover{
+            box-shadow: 5px 5px 5px 5px rgb(155, 154, 154);
+        }
+
+        .card1{
+            animation: card1 10s infinite;
+        }
+        .card2{
+            animation: card2 10s infinite;
+        }
+        .card3{
+            animation: card3 10s infinite;
+        }
+
+        @keyframes card1{
+            0%{
+                transform: translateY(0px);
+            }
+            20%{
+                transform: translateY(-25px);
+                transition: all ease-in;
+                
+            }
+            50%{
+                transform: translateY(20px);
+                transition: all ease-in;
+            }
+        }
+
+        @keyframes card2{
+            0%{
+                transform: translateY(0px);
+            }
+            20%{
+                transform: translateY(25px);
+                transition: all ease-in;
+                
+            }
+            50%{
+                transform: translateY(-20px);
+                transition: all ease-in;
+            }
+        } 
+        
+        @keyframes card3{
+            0%{
+                transform: translateY(0px);
+            }
+            20%{
+                transform: translateY(-25px);
+                transition: all ease-in;
+                
+            }
+            50%{
+                transform: translateY(20px);
+                transition: all ease-in;
+            }
+        }
+
+
+        .girl1{
+            position: relative;
+            bottom: 40px;
+            border-radius: 50%;
+            border: 10px solid rgb(246, 238, 238);
+        }
+        .name{
+            font-size: 30px;
+            color: rgb(255, 153, 0);
+        }
+        .content{
+            padding: 2px 20px;
+            line-height: 25px;
+        }
+    </style>
+
+</head>
+<body>
+
+    <div class="main-container">
+        <div class="section-1-for-heading">
+            <p class="heading">Testimonials</p>
+            <p class="sub-heading">Subsribe Easy Tutorials Youtube Channel To Watch More Videos</p>
+        </div>
+        <div class="section-2-for-content">
+            <div class="card card1">
+                <img src="./Image/girl 1.jpg" alt="" width="210px" height="230px" class="girl1">
+                <p class="content">Lorem ipsum dolor sit amet consectetur Lorem, ipsum dolor. adipisicing elit. Dolores vero accusamus dolor veniam explicabo. Soluta, provident nisi. Illo, nisi</p>
+                <p class="name">Riya Sharma</p>
+            </div>
+            <div class="card card2">
+                <img src="./Image/girl2.jpg" alt="" width="210px" height="230px" class="girl1">
+                <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores vero accusamus dolor sed qui aut ab illo veniam explicabo. Soluta, provident nisi. Illo, nisi</p>
+                <p class="name">Priya Soni</p>
+            </div>
+            <div class="card card3">
+                <img src="./Image/girl 3.jpg" alt="" width="210px" height="230px" class="girl1">
+                <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores vero accusamus dolor sed qui aut ab illo veniam explicabo. Soluta, provident nisi. Illo, nisi </p>
+                <p class="name">Wamiqa Shah</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
